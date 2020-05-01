@@ -7,7 +7,9 @@
   "description": "Deploy your serverless static site to S3 Website Bucket.",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -36,6 +38,8 @@
     "mime": "^1.2.11",
     "async": "^1.5.2",
     "lodash": "^4.2.1",
-    "bluebird": "^3.0.6"
-  }
+    "bluebird": "^3.0.6",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
